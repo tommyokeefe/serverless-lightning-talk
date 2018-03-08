@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Look Ma, No Server!</h1>
+					<img data-src="/images/simpsonsNoHands.jpeg">
+				</section>
+				<section>
+					<section>
+						<h2>Serverless Architecture:</h2>
+						<h3>What is it and why would I want it?!</h3>
+						<ul>
+							<li class="fragment fade-up">What: Serverless !== "Look ma, no hands!"</li>
+							<li class="fragment fade-up">What: "It's in the cloud?"</li>
+							<li class="fragment fade-up">What: BaaS & FaaS</li>
+							<li class="fragment fade-up">Why: Because we can!</li>
+							<li class="fragment fade-up">Why: It's a viable option</li>
+							<li class="fragment fade-up">Why: It's a logical evolution of PaaS</li>
+						</ul>
+					</section>
+					<section>
+						<h2>BaaS === 3rd party services</h2>
+						<img class="logo" data-src="/images/firebaseLogo.png">
+						<img class="logo" data-src="/images/kinveyLogo.png">
+						<img class="logo" data-src="/images/kiiLogo.png">
+					</section>
+					<section>
+						<h2>FaaS === ephemeral containers</h2>
+						<h4 class="fragment fade-down">
+							transient stateless containers that scale
+						</h4>
+						<ul>
+							<li class="fragment fade-left">Transient: They're here, then *poof*, they're gone!</li>
+							<li class="fragment fade-left">Stateless: You need state? Put it in a database.</li>
+							<li class="fragment fade-left">Containers: Run your code in here, without worrying about hardware and OS.</li>
+							<li class="fragment fade-left">Scale: don't worry about capacity, we'll scale it automatically to meet demand.</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Is it right for me?<br>
+							<span class="fragment fade-down">Maybe.</span>
+						</h1>
+					</section>
+
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
