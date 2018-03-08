@@ -1,3 +1,3 @@
-# Look Ma, No Server!
+# Serverless Architecture in 5 Minutes or Less
 [Slides for a presentation on serverless architecture](https://tommyokeefe.github.io/serverless-lightning-talk/)
-This is built using [reveal.js](https://revealjs.com/#/). It's fantastic. You should check it out. 
+This is built using [reveal.js](https://revealjs.com/#/). Reveal.js is fantastic. You should check it out. 
