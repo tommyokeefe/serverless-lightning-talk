@@ -25,48 +25,77 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1>Look Ma, No Server!</h1>
-					<img data-src="images/simpsonsNoHands.jpeg">
+					<h1>Serverless Architecture</h1>
+					<h2>in 5 minutes or less</h2>
 				</section>
 				<section>
-					<section>
-						<h2>Serverless Architecture:</h2>
-						<h3>What is it and why would I want it?!</h3>
-						<ul>
-							<li class="fragment fade-up">What: Serverless !== "Look ma, no hands!"</li>
-							<li class="fragment fade-up">What: "It's in the cloud?"</li>
-							<li class="fragment fade-up">What: BaaS & FaaS</li>
-							<li class="fragment fade-up">Why: Because we can!</li>
-							<li class="fragment fade-up">Why: It's a viable option</li>
-							<li class="fragment fade-up">Why: It's a logical evolution of PaaS</li>
-						</ul>
-					</section>
-					<section>
-						<h2>BaaS === 3rd party services</h2>
-						<img class="logo" data-src="images/firebaseLogo.png">
-						<img class="logo" data-src="images/kinveyLogo.png">
-						<img class="logo" data-src="images/kiiLogo.png">
-					</section>
-					<section>
-						<h2>FaaS === ephemeral containers</h2>
-						<h4 class="fragment fade-down">
-							transient stateless containers that scale
-						</h4>
-						<ul>
-							<li class="fragment fade-left">Transient: They're here, then *poof*, they're gone!</li>
-							<li class="fragment fade-left">Stateless: You need state? Put it in a database.</li>
-							<li class="fragment fade-left">Containers: Run your code in here, without worrying about hardware and OS.</li>
-							<li class="fragment fade-left">Scale: don't worry about capacity, we'll scale it automatically to meet demand.</li>
-						</ul>
-					</section>
+					<h2>Alexa, tell me about serverless architecture</h2>
+					<img class="logo" data-src="images/alexaLogo.png">
 				</section>
 				<section>
-					<section>
-						<h1>Is it right for me?<br>
-							<span class="fragment fade-down">Maybe.</span>
-						</h1>
-					</section>
-
+					<h2>Serverless Architecture:</h2>
+					<h3>What is it?</h3>
+					<ul>
+						<li class="fragment fade-up">Backend as a service (BaaS)</li>
+						<li class="fragment fade-up">Functions as a service (FaaS)</li>
+					</ul>
+				</section>
+				<section>
+					<h2>FaaS === a logical evolution of Platform as a service (PaaS)</h2>
+					<ul>
+						<li class="fragment fade-down">PaaS: long running containers that provide ease of use & scalability</li>
+					<li class="fragment fade-down">PaaS examples: Heroku, BitNami, Google AppEngine, etc..</li>
+					<li class="fragment fade-down">FaaS examples: AWS Lambda (Amazon), Azure Functions (Microsoft), & Cloud Functions (Google).</li>
+					</ul>
+				</section>
+				<section>
+					<h2>FaaS === ephemeral containers</h2>
+					<h3 class="fragment fade-down">transient stateless containers that scale</h3>
+					<ul>
+						<li class="fragment fade-left">Containers: Run your code in here, without worrying about hardware and OS.</li>
+						<li class="fragment fade-left">Transient: They're here, then *poof*, they're gone!</li>
+						<li class="fragment fade-left">Stateless: You need state? Put it in a database.</li>
+						<li class="fragment fade-left">Scale: don't worry about capacity, we'll scale it automatically to meet demand.</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Is it right for me?<br>
+						<span class="fragment fade-down">Maybe.</span>
+					</h1>
+				</section>
+				<section>
+					<h2>FaaS Pros:</h2>
+					<ul>
+						<li class="fragment fade-left">Cost effective</li>
+						<li class="fragment fade-left">Can scale automagically</li>
+						<li class="fragment fade-left">Deployments can be simple and straight-forward</li>
+						<li class="fragment fade-left">Removes a lot of (unnessecary?) overhead</li>
+						<li class="fragment fade-left">Great for microservices & event-driven apps</li>
+					</ul>
+				</section>
+				<section>
+					<h2>FaaS Cons:</h2>
+					<ul>
+						<li class="fragment fade-left">#NoOps is a lie</li>
+						<li class="fragment fade-left">The learning curve is steep</li>
+						<li class="fragment fade-left">Coldstarts can be a problem</li>
+						<li class="fragment fade-left">Not efficient for long running tasks</li>
+						<li class="fragment fade-left">Testing & running locally can be a challenge</li>
+						<li class="fragment fade-left">Vendor lock-in is real</li>
+					</ul>
+				</section>
+				<section>
+					<h2>If you remember anything:</h2>
+					<ol>
+						<li class="fragment fade-left">Call it FaaS</li>
+						<li class="fragment fade-left">It probably won't change your life</li>
+						<li class="fragment fade-left">It probably won't ruin your life</li>
+						<li class="fragment fade-left">It might be a good option</li>
+					</ol>
+				</section>
+				<section>
+					<img data-src="images/nprLogo.svg">
+					<p>Want to work with us? follow @NPRTechTeam on twitter for job postings and information!</p>
 				</section>
 			</div>
 		</div>
